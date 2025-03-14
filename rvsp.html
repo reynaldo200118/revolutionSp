@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revolution SP - Venta de Motos Usadas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            float: left;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 20px;
+        }
+        .motor {
+            background-color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .motor img {
+            max-width: 200px;
+            border-radius: 5px;
+        }
+        .motor h3 {
+            margin: 0;
+            color: #333;
+        }
+        .motor p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Revolution SP</h1>
+        <p>Venta de Motos Usadas en Excelente Estado</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#motos">Motos Disponibles</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- Section de Motos -->
+    <section id="motos">
+        <h2>Motos en Venta</h2>
+        
+        <!-- Moto 1 -->
+        <!-- Moto 1 -->
+        <div class="motor">
+            <img src="imagenes/moto1.jpg" alt="Moto Yamaha R1">
+            <div>
+                 <h3>Moto Yamaha R1</h3>
+                 <p>Modelo: 2020</p>
+                 <p>Precio: $56.000.000</p>
+                 <p>Estado: Excelente</p>
+           </div>
+            <a href="moto1-detalle.html">Ver Detalles</a>
+         </div>
+
+
+        <!-- Moto 2 -->
+        <div class="motor">
+            <img src="imagenes/moto2.jpg" alt="BMW">
+            <div>
+                <h3>Moto BMW S1000RR</h3>
+                <p>Modelo: 2019</p>
+                <p>Precio: $76.000.0000</p>
+                <p>Estado: Muy Buen Estado</p>
+            </div>
+            <a href="moto2-detalle.html">Ver Detalles</a>
+        </div>
+
+        <!-- Moto 3 -->
+        <div class="motor">
+            <img src="imagenes/moto3.jpg" alt="Mt">
+            <div>
+                <h3>Moto Yamaha Mt 09 v3</h3>
+                <p>Modelo: 2024</p>
+                <p>Precio: $44.000.000</p>
+                <p>Estado: Impecable</p>
+            </div>
+            <a href="moto3-detalle.html">Ver Detalles</a>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <div class="contact-form">
+            <form action="enviar-formulario.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Revolution SP. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
+
+
